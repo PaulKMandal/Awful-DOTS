@@ -8,6 +8,16 @@ THEME_DIR="${HOME}/.themes"
 ICON_DIR="${HOME}/.icons"
 FONT_DIR="${HOME}/.local/share/fonts"
 BACKUP_AWESOME="${CONFIG_DIR}/awesome.bak"
+# Ensure package manager and AUR helper installations
+
+echo "Installing required packages..."
+sudo pacman -S --needed --noconfirm \
+  network-manager-applet networkmanager alsa-utils acpi \
+  playerctl scrot picom redshift gpick nitrogen lxappearance
+
+yay -S --needed --noconfirm light
+
+echo "Package installation complete."
 
 # 1. Create target dirs if needed
 mkdir -p "$CONFIG_DIR" "$THEME_DIR" "$ICON_DIR" "$FONT_DIR"
