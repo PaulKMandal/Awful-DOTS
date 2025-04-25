@@ -86,13 +86,13 @@ function _M.get()
 		----------------------------------
 
 		-- Go to previous tag by index
-		awful.key {
-			modifiers   = { modkey },
-			key         = "q",
-			description = 'view previous',
-			group       = 'tag',
-			on_press    = awful.tag.viewprev
-		},
+		--awful.key {
+		--	modifiers   = { modkey },
+		--	key         = "q",
+		--	description = 'view previous',
+		--	group       = 'tag',
+		--	on_press    = awful.tag.viewprev
+		--},
 
 		-- Go to next tag by index
 		awful.key {
