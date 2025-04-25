@@ -2,18 +2,16 @@
 <h4 align="center">Featuring AwesomeWM</h4><br/><br/>
 
 <p align="center"><img src="assets/132.png"></p><br>
+This is a fork of https://github.com/Amitabha37377/Awful-DOTS
 
-Welcome to my stash of dotfiles of my awesomewm setup. Note that things are
-likely to be changed in future as I am still working on this setup. Feel free to
-give a :star: to this repo if you liked the setup. It is much appreciated :3
+It features an install and uninstall script to speed up the process. I'm working on a few things including getting rid of the bottom dock.
 
 ---
 
 ## Dependencies
 
 - **AwesomeWM**: Use the git version. Stable version will not work.
-- **Picom**: Use any picom fork of your liking. (I'm using
-  <a href="https://github.com/fdev31/picom">fdev31's fork</a>)
+- **Picom**: Use any picom fork of your liking. 
 - **nm-applet**: Used for wifi.
 - **Light**: Required for the brightness control slider
 - **Alsa Utils**: Required for the volume control slider.
