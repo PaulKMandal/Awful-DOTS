@@ -11,8 +11,8 @@ local modkey = RC.vars.modkey
 local terminal = RC.vars.terminal
 
 --Custom Widgets
-local dock = require("layout.dock.dock")
-local dock2 = require("layout.dock.dock2")
+--local dock = require("layout.dock.dock")
+--local dock2 = require("layout.dock.dock2")
 local control_center = require("popups.control_center.main")
 local powermenu = require("popups.powermenu.main")
 local volume_osd = require("popups.osds.volume_osd")
@@ -36,7 +36,7 @@ local volume_timer = gears.timer {
 
 volume_osd:connect_signal("mouse::enter", function()
 	volume_timer:stop()      -- Stop the timer when the mouse enters the dock
-	volume_osd.visible = true -- Show the dock immediately
+	--volume_osd.visible = true -- Show the dock immediately
 end)
 
 -- Attach the timer to a signal that triggers when the mouse leaves the dock
@@ -57,7 +57,7 @@ local brightness_timer = gears.timer {
 
 brightness_osd:connect_signal("mouse::enter", function()
 	brightness_timer:stop()      -- Stop the timer when the mouse enters the dock
-	brightness_osd.visible = true -- Show the dock immediately
+	--brightness_osd.visible = true -- Show the dock immediately
 end)
 
 -- Attach the timer to a signal that triggers when the mouse leaves the dock
@@ -421,8 +421,8 @@ function _M.get()
 
 		-- Toggle Dock
 		awful.key({ "Mod4" }, "z", function()
-				dock.visible = not dock.visible
-				dock2.visible = not dock2.visible
+				--dock.visible = not dock.visible
+				--dock2.visible = not dock2.visible
 			end,
 			{ description = "Toggle Dock", group = "custom" }),
 
