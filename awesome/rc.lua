@@ -80,8 +80,8 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- Statusbar: Wibar
 require("layout.topbar.topbar")
---require("layout.dock.dock")
---require("layout.dock.dock2")
+require("layout.dock.dock")
+require("layout.dock.dock2")
 require("popups.lockscreen")
 --Wallpaper
 require("deco.wall")
