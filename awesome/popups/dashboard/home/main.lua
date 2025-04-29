@@ -26,9 +26,6 @@ local Separator = wibox.widget.textbox("    ")
 Separator.forced_height = 950
 Separator.forced_width = 440
 
---Sidebar
-local sidebar = require("popups.dashboard.home.sidebar")
-
 --Main Wibox
 local dashboard_home = awful.popup {
 	screen = s,
@@ -89,7 +86,6 @@ dashboard_home:setup {
 			Separator,
 			layout = wibox.layout.stack
 		},
-		sidebar,
 		layout = wibox.layout.fixed.horizontal
 	},
 	widget = wibox.container.background,
