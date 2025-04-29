@@ -19,22 +19,27 @@ local beautiful = require("beautiful")
 -- {{{ Signals
 -- Signal function to execute when a new client appears.
 client.connect_signal("manage", function(c)
-	-- Set the windows at the slave,
-	-- i.e. put it at the end of others instead of setting it master.
-	-- if not awesome.startup then awful.client.setslave(c) end
+    -- set new windows as slaves
+    if not awesome.startup then
+        awful.client.setslave(c)
+    end
 
-	if awesome.startup
-		and not c.size_hints.user_position
-		and not c.size_hints.program_position then
-		-- Prevent clients from being unreachable after screen count changes.
-		awful.placement.no_offscreen(c)
-	end
-end)
+    -- keep them on screen after restarts
+    if awesome.startup
+       and not c.size_hints.user_position
+       and not c.size_hints.program_position
+    then
+        awful.placement.no_offscreen(c)
+    end
 
-client.connect_signal("manage", function(c)
-	c.shape = function(cr, w, h)
-		gears.shape.rounded_rect(cr, w, h, 8)
-	end
+    -- clip to an 8px rounded rectangle
+    --c.shape = function(cr, w, h)
+    --    gears.shape.rounded_rect(cr, w, h, 8)
+    --end
+
+    -- draw a rounded border, width pulled from your theme
+    c.border_width = beautiful.border_width
+    c.border_color = beautiful.border_normal
 end)
 
 -- Enable sloppy focus, so that focus follows mouse.

@@ -6,19 +6,20 @@ client.connect_signal("mouse::enter", function(c)
 	c:emit_signal("request::activate", "mouse_enter", { raise = false })
 end)
 
-client.connect_signal("focus", function(c)
-	c.border_color = "#1a1b26"
-end)
-client.connect_signal("unfocus", function(c)
-	c.border_color = "#1a1b26"
-end)
+--local beautiful = require("beautiful")
+--client.connect_signal("focus", function(c)
+	--c.border_color = beautiful.border_focus
+--end)
+--client.connect_signal("unfocus", function(c)
+	--c.border_color = beautiful.border_normal
+--end)
 -- }}}
-client.connect_signal("focus", function(c)
-	c.border_width = 5
-end)
-client.connect_signal("unfocus", function(c)
-	c.border_width = 5
-end)
+--client.connect_signal("focus", function(c)
+	--c.border_width = beautiful.border_width
+--end)
+--client.connect_signal("unfocus", function(c)
+	--c.border_width = beautiful.border_width
+--end)
 
 -- Signal function to execute when a new client appears.
 client.connect_signal("manage", function(c)

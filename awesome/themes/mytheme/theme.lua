@@ -13,7 +13,7 @@ theme.bg_normal                                       = "#24283b"
 theme.fg_normal                                       = color.white
 theme.bg_focus                                        = "#535d6c"
 theme.fg_focus                                        = color.white
-theme.border_width                                    = 1
+theme.border_width                                    = 5
 theme.border_normal                                   = "#000000"
 theme.border_focus                                    = "#535d6c"
 
