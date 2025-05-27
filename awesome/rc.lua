@@ -84,7 +84,7 @@ require("layout.topbar.topbar")
 --require("layout.dock.dock2")
 require("popups.lockscreen")
 --Wallpaper
-require("deco.wall")
+--require("deco.wall")
 -- gears.wallpaper.maximized("/home/amitabha/.config/awesome/Wallpapers/catMachup.jpg", s)
 
 --Popup Launcher

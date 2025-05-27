@@ -32,7 +32,7 @@ theme.magenta                                         = "#BB9AF7"
 theme.cyan                                            = "#7dcfff"
 
 --Default wallpaper
-theme.wallpaper                                       = os.getenv("HOME") .. "/.config/awesome/Wallpapers/catMachup.jpg"
+--theme.wallpaper                                       = os.getenv("HOME") .. "/.config/awesome/Wallpapers/xPiPUEr.jpg"
 
 --Close Button
 theme.titlebar_close_button_normal                    = "~/.config/awesome/themes/mytheme/titlebar_icons/inactive.png"
